@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maya Chen — Graphic Designer & Visual Storyteller | Portfolio</title>
+  <meta name="description" content="Playful hand-drawn doodle scrapbook portfolio of Maya Chen. Branding, motion design, editorial posters, and merch illustration.">
+
+  <!-- Google Fonts: Bagel Fat One, Bungee, Caveat, Patrick Hand, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bungee&family=Caveat:wght@600;700&family=Patrick+Hand&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/scrapbook.css">
+</head>
+<body>
+
+  <!-- Fullscreen Interactive Stamp Canvas Layer -->
+  <div id="stamp-canvas-layer"></div>
+
+  <!-- Scrapbook Navigation -->
+  <nav class="scrapbook-nav" id="scrapbook-nav">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-badge" id="nav-brand-logo">
+        <div class="avatar-mini">✏️</div>
+        <span class="brand-text">MAYA CHEN</span>
+      </a>
+
+      <!-- Paper Bookmark Navigation Tabs -->
+      <ul class="nav-tabs" id="nav-tabs">
+        <li><a href="#hero" class="active">★ HOME</a></li>
+        <li><a href="#tools">⚡ TOOLS</a></li>
+        <li><a href="#about">✎ DIARY</a></li>
+        <li><a href="#motion">▶ MOTION</a></li>
+        <li><a href="#branding">✿ BRANDING</a></li>
+        <li><a href="#editorial">✣ POSTERS</a></li>
+        <li><a href="#merch">👕 MERCH</a></li>
+        <li><a href="#playground">🎨 STAMP PAD</a></li>
+        <li><a href="#contact">✉ CONTACT</a></li>
+      </ul>
+
+      <!-- Interactive Controls -->
+      <div class="nav-controls">
+        <button class="control-btn" id="sfx-toggle-btn" title="Toggle Sound Effects">
+          <span id="sfx-icon">🔊</span>
+          <span id="sfx-label">SFX ON</span>
+        </button>
+        <button class="control-btn" id="stamp-mode-toggle-btn" title="Toggle Click-To-Stamp Mode on Page">
+          <span>✨</span>
+          <span>STAMP MODE</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       1. HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Background Animated SVG Doodle Vectors -->
+    <svg class="hero-doodle-bg" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Squiggly connector line from pencil to title -->
+      <path id="hero-squiggle-1" class="doodle-path mustard" d="M980 320 C920 220, 840 280, 750 210 C660 140, 520 230, 410 180 C320 140, 240 220, 160 190" />
+      <!-- Big hand-drawn circle around key word -->
+      <path id="hero-circle-1" class="doodle-path coral" d="M120 450 C80 380, 260 340, 390 370 C520 400, 480 500, 360 520 C220 540, 90 480, 130 420" />
+      <!-- Star doodle -->
+      <path class="doodle-path mustard" d="M820 140 L830 160 L852 163 L836 178 L840 200 L820 188 L800 200 L804 178 L788 163 L810 160 Z" />
+      <!-- Little spiral doodle -->
+      <path class="doodle-path teal" d="M1250 180 C1280 190, 1290 220, 1270 240 C1250 260, 1210 250, 1200 220 C1190 180, 1240 140, 1290 150 C1340 160, 1360 220, 1330 265" />
+      <!-- Squiggly underline -->
+      <path id="hero-underline-1" class="doodle-path purple" d="M70 590 Q 180 615, 290 590 T 510 590 T 730 590" />
+    </svg>
+
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tagline-wrapper">
+          <span class="designer-greeting">Hey there, I'm Maya! 👋</span>
+          <div class="stamp-badge">
+            <span>●</span> AVAILABLE FOR 2026 COMMISSIONS
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          PORT<br>FOLIO
+        </h1>
+
+        <p class="hero-subtitle">
+          Multidisciplinary <strong>Graphic Designer</strong> &amp; 
+          <span class="highlight-marker">Visual Storyteller</span> turning messy 
+          ideas into bold brands, punchy motion pieces, and tactile print joy.
+        </p>
+
+        <!-- Scattered Doodle Skill Tags -->
+        <div class="hero-skills-scatter">
+          <div class="skill-tag"><span>✦</span> BRAND IDENTITY</div>
+          <div class="skill-tag"><span>▶</span> MOTION &amp; KINETIC TYPE</div>
+          <div class="skill-tag"><span>✎</span> EDITORIAL &amp; POSTERS</div>
+          <div class="skill-tag"><span>⚡</span> APPAREL &amp; MERCH GRAPHICS</div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#branding" class="btn-doodle coral" id="hero-explore-work-btn">
+            EXPLORE THE WORK <span>↓</span>
+          </a>
+          <a href="#contact" class="btn-doodle outline" id="hero-talk-btn">
+            DROP A LINE <span>✉</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Illustrated Mascot Avatar Hero Visual -->
+      <div class="hero-avatar-wrapper">
+        <div class="avatar-sticker-card" id="hero-avatar-sticker">
+          <!-- Washi tape at top -->
+          <div class="washi-tape top-left pink"></div>
+          <div class="washi-tape top-right blue"></div>
+          
+          <img src="assets/images/avatar-hero.jpg" alt="Maya Chen Graphic Designer Illustrated Mascot" class="avatar-img" id="hero-avatar-img">
+          
+          <!-- Sticky Note overlay -->
+          <div class="sticky-note hero-sticky-note">
+            <div class="washi-tape center-top yellow" style="height: 18px; min-width: 60px;"></div>
+            <span>"Crafted with 100% caffeine, vectors, &amp; pure love!" ✨</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. TOOLS & SOFTWARE STRIP
+       ========================================================================== */
+  <section class="tools-strip-section" id="tools">
+    <div class="tools-strip-title-badge">
+      <span>★ MY DIGITAL &amp; ANALOG WEAPONS OF CHOICE ★</span>
+    </div>
+
+    <div class="tools-ticker-wrap">
+      <div class="tools-ticker" id="tools-ticker">
+        <!-- Loop Item 1: Illustrator -->
+        <div class="tool-badge-card" data-tool="Illustrator">
+          <div class="tool-icon-box" style="background: #FFE2D1; color: #EA580C;">Ai</div>
+          <div class="tool-info">
+            <span class="tool-name">ILLUSTRATOR</span>
+            <span class="tool-skill">Pen tool ninja &amp; vector master</span>
+          </div>
+        </div>
+
+        <!-- Loop Item 2: Photoshop -->
+        <div class="tool-badge-card" data-tool="Photoshop">
+          <div class="tool-icon-box" style="background: #D8EEFE; color: #0284C7;">Ps</div>
+          <div class="tool-info">
+            <span class="tool-name">PHOTOSHOP</span>
+            <span class="tool-skill">Halftones, collages, textures</span>
+          </div>
+        </div>
+
+        <!-- Loop Item 3: After Effects -->
+        <div class="tool-badge-card" data-tool="After Effects">
+          <div class="tool-icon-box" style="background: #EDE9FE; color: #7C3AED;">Ae</div>
+          <div class="tool-info">
+            <span class="tool-name">AFTER EFFECTS</span>
+            <span class="tool-skill">Kinetic type &amp; dynamic motion</span>
+          </div>
+        </div>
+
+        <!-- Loop Item 4: Figma -->
+        <div class="tool-badge-card" data-tool="Figma">
+          <div class="tool-icon-box" style="background: #FEE2E2; color: #DC2626;">Fg</div>
+          <div class="tool-info">
+            <span class="tool-name">FIGMA</span>
+            <span class="tool-skill">Design systems &amp; web layouts</span>
+          </div>
+        </div>
+
+        <!-- Loop Item 5: Cinema 4D / Blender -->
+        <div class="tool-badge-card" data-tool="Cinema 4D">
+          <div class="tool-icon-box" style="background: #FEF3C7; color: #D97706;">3D</div>
+          <div class="tool-info">
+            <span class="tool-name">CINEMA 4D &amp; BLENDER</span>
+            <span class="tool-skill">Playful 3D toy aesthetics</span>
+          </div>
+        </div>
+
+        <!-- Loop Item 6: Procreate -->
+        <div class="tool-badge-card" data-tool="Procreate">
+          <div class="tool-icon-box" style="background: #E0E7FF; color: #4F46E5;">Pr</div>
+          <div class="tool-info">
+            <span class="tool-name">PROCREATE</span>
+            <span class="tool-skill">Hand-lettering &amp; doodle sketches</span>
+          </div>
+        </div>
+
+        <!-- Loop Item 7: InDesign -->
+        <div class="tool-badge-card" data-tool="InDesign">
+          <div class="tool-icon-box" style="background: #FCE7F3; color: #DB2777;">Id</div>
+          <div class="tool-info">
+            <span class="tool-name">INDESIGN</span>
+            <span class="tool-skill">Zines, editorial spreads, grids</span>
+          </div>
+        </div>
+
+        <!-- Loop Item 8: Risograph Print -->
+        <div class="tool-badge-card" data-tool="Risograph">
+          <div class="tool-icon-box" style="background: #DCFCE7; color: #16A34A;">Riso</div>
+          <div class="tool-info">
+            <span class="tool-name">RISOGRAPH PRINTING</span>
+            <span class="tool-skill">Tactile 3-drum screen ink printing</span>
+          </div>
+        </div>
+
+        <!-- Duplicate set for seamless continuous marquee loop -->
+        <div class="tool-badge-card" data-tool="Illustrator">
+          <div class="tool-icon-box" style="background: #FFE2D1; color: #EA580C;">Ai</div>
+          <div class="tool-info">
+            <span class="tool-name">ILLUSTRATOR</span>
+            <span class="tool-skill">Pen tool ninja &amp; vector master</span>
+          </div>
+        </div>
+
+        <div class="tool-badge-card" data-tool="Photoshop">
+          <div class="tool-icon-box" style="background: #D8EEFE; color: #0284C7;">Ps</div>
+          <div class="tool-info">
+            <span class="tool-name">PHOTOSHOP</span>
+            <span class="tool-skill">Halftones, collages, textures</span>
+          </div>
+        </div>
+
+        <div class="tool-badge-card" data-tool="After Effects">
+          <div class="tool-icon-box" style="background: #EDE9FE; color: #7C3AED;">Ae</div>
+          <div class="tool-info">
+            <span class="tool-name">AFTER EFFECTS</span>
+            <span class="tool-skill">Kinetic type &amp; dynamic motion</span>
+          </div>
+        </div>
+
+        <div class="tool-badge-card" data-tool="Figma">
+          <div class="tool-icon-box" style="background: #FEE2E2; color: #DC2626;">Fg</div>
+          <div class="tool-info">
+            <span class="tool-name">FIGMA</span>
+            <span class="tool-skill">Design systems &amp; web layouts</span>
+          </div>
+        </div>
+
+        <div class="tool-badge-card" data-tool="Cinema 4D">
+          <div class="tool-icon-box" style="background: #FEF3C7; color: #D97706;">3D</div>
+          <div class="tool-info">
+            <span class="tool-name">CINEMA 4D &amp; BLENDER</span>
+            <span class="tool-skill">Playful 3D toy aesthetics</span>
+          </div>
+        </div>
+
+        <div class="tool-badge-card" data-tool="Procreate">
+          <div class="tool-icon-box" style="background: #E0E7FF; color: #4F46E5;">Pr</div>
+          <div class="tool-info">
+            <span class="tool-name">PROCREATE</span>
+            <span class="tool-skill">Hand-lettering &amp; doodle sketches</span>
+          </div>
+        </div>
+
+        <div class="tool-badge-card" data-tool="InDesign">
+          <div class="tool-icon-box" style="background: #FCE7F3; color: #DB2777;">Id</div>
+          <div class="tool-info">
+            <span class="tool-name">INDESIGN</span>
+            <span class="tool-skill">Zines, editorial spreads, grids</span>
+          </div>
+        </div>
+
+        <div class="tool-badge-card" data-tool="Risograph">
+          <div class="tool-icon-box" style="background: #DCFCE7; color: #16A34A;">Riso</div>
+          <div class="tool-info">
+            <span class="tool-name">RISOGRAPH PRINTING</span>
+            <span class="tool-skill">Tactile 3-drum screen ink printing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. ABOUT / EXPERIENCE (DESIGNER'S DIARY)
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-scrapbook-grid">
+        
+        <!-- Left: Polaroid Avatar + Sticky Note Stats -->
+        <div class="about-visual-col">
+          <div class="polaroid-frame" id="about-polaroid">
+            <div class="washi-tape top-left yellow"></div>
+            <div class="paperclip"></div>
+            <img src="assets/images/avatar-about.jpg" alt="Maya Chen in her creative studio illustration" class="polaroid-img">
+            <div class="polaroid-caption">Maya in her natural habitat ☕✨</div>
+          </div>
+
+          <!-- Fun Designer Stats -->
+          <div class="about-stats-grid">
+            <div class="sticky-note stat-sticky pink">
+              <div class="washi-tape center-top pink" style="height: 16px; min-width: 50px;"></div>
+              <div class="stat-number">1,840+</div>
+              <div class="stat-label">Cups of oat flat white pulled</div>
+            </div>
+
+            <div class="sticky-note stat-sticky green">
+              <div class="washi-tape center-top green" style="height: 16px; min-width: 50px;"></div>
+              <div class="stat-number">99+</div>
+              <div class="stat-label">Layers named 'final_v7_REAL'</div>
+            </div>
+
+            <div class="sticky-note stat-sticky blue">
+              <div class="washi-tape center-top blue" style="height: 16px; min-width: 50px;"></div>
+              <div class="stat-number">14</div>
+              <div class="stat-label">Global Design &amp; Type Accolades</div>
+            </div>
+
+            <div class="sticky-note stat-sticky">
+              <div class="washi-tape center-top yellow" style="height: 16px; min-width: 50px;"></div>
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Obsession with tactile craft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Lined Paper Diary Notebook with Experience Timeline -->
+        <div class="diary-notebook" id="diary-notebook">
+          <div class="washi-tape top-right lavender"></div>
+          
+          <div class="diary-header">
+            <span class="section-label-doodle">// CHAPTER 01: THE ORIGIN STORY</span>
+            <h2 class="section-heading-big">DESIGNER'S DIARY</h2>
+          </div>
+
+          <div class="diary-bio-text">
+            <p>
+              I believe great design isn't just clean pixels — it's <strong>energy, friction, curiosity, and story</strong>. 
+              I started sketching in margins of math notebooks in middle school, and honestly? 
+              I never really stopped.
+            </p>
+            <p>
+              Over the past 6+ years, I've had the pleasure of partnering with indie beverage companies, 
+              Tokyo underground streetwear labels, underground music festivals, and cutting-edge startups. 
+              I treat every project like a tailor-made universe: custom lettering, deliberate tactile grit, 
+              and personality that cuts through sterile algorithm templates.
+            </p>
+          </div>
+
+          <!-- Milestones / Timeline -->
+          <div class="diary-header" style="margin-top: 2rem; margin-bottom: 0.8rem;">
+            <span class="section-label-doodle">// TIMELINE &amp; CHAPTERS</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--ink-primary);">ROADMAP OF CHAOS</h3>
+          </div>
+
+          <ul class="diary-timeline">
+            <li class="timeline-item">
+              <div>
+                <span class="timeline-year">2024 — PRESENT</span>
+                <span class="timeline-role">Senior Brand &amp; Motion Lead</span>
+                <span class="timeline-company">@ Studio Neon Drift</span>
+              </div>
+              <p class="timeline-desc">Leading visual identity and animated title systems for cult entertainment and lifestyle products.</p>
+            </li>
+
+            <li class="timeline-item">
+              <div>
+                <span class="timeline-year">2022 — 2024</span>
+                <span class="timeline-role">Lead Packaging &amp; Merch Designer</span>
+                <span class="timeline-company">@ Wildflower Goods Co.</span>
+              </div>
+              <p class="timeline-desc">Crafted 30+ physical product lines from sustainable aluminum cans to holographic apparel capsules.</p>
+            </li>
+
+            <li class="timeline-item">
+              <div>
+                <span class="timeline-year">2020 — 2022</span>
+                <span class="timeline-role">Visual Communication Designer</span>
+                <span class="timeline-company">@ Papercut Collective</span>
+              </div>
+              <p class="timeline-desc">Specialized in risograph print posters, typography zines, and kinetic typography sequences.</p>
+            </li>
+
+            <li class="timeline-item">
+              <div>
+                <span class="timeline-year">2019</span>
+                <span class="timeline-role">BFA in Graphic Design &amp; Illustration</span>
+                <span class="timeline-company">with First-Class Honors</span>
+              </div>
+              <p class="timeline-desc">Graduated with Best Capstone Portfolio Award for experimental tactile print &amp; motion.</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. WORK SECTIONS (GROUPED BY CATEGORY WITH ILLUSTRATED DIVIDERS)
+       ========================================================================== -->
+  <section class="work-section" id="work">
+    <div class="container">
+
+      <!-- CATEGORY 1: MOTION & VIDEO STILLS -->
+      <div class="category-divider motion" id="motion">
+        <div class="category-divider-card">
+          <div class="divider-info">
+            <span class="divider-category-tag">CATEGORY 01</span>
+            <h2 class="divider-title">MOTION &amp; VIDEO STILLS</h2>
+            <p class="divider-punchline">"Turning static graphics into living, breathing visual adrenaline."</p>
+          </div>
+          <div class="divider-icon-box" title="Motion design icon">
+            🎬
+          </div>
+        </div>
+      </div>
+
+      <!-- Motion Projects Grid -->
+      <div class="projects-grid-two">
+        <!-- Project 1: Hyperdrive -->
+        <article class="scrapbook-project-card" data-project-id="hyperdrive">
+          <div class="washi-tape top-left purple"></div>
+          <div class="project-thumbnail-wrapper">
+            <img src="assets/images/project-motion-1.jpg" alt="Hyperdrive Cyberpunk Kinetic Motion Design Still" class="project-thumbnail-img">
+            <div class="project-play-badge">▶</div>
+          </div>
+          <div class="project-card-details">
+            <span class="project-client-tag">CYBERPUNK SOUNDTRACKS TOKYO • 2025</span>
+            <h3 class="project-card-title">HYPERDRIVE: KINETIC TITLE SEQUENCE</h3>
+            <p class="project-card-desc">High-voltage neon kinetic lettering, screen-print halftone textures, and anime-inspired motion for an electronic music album release.</p>
+            <div class="project-tags-row">
+              <span class="mini-tag">After Effects</span>
+              <span class="mini-tag">Kinetic Typography</span>
+              <span class="mini-tag">Halftone Shaders</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="stamp-badge">CASE STUDY</span>
+              <span class="view-case-study-link">OPEN SKETCHBOOK</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Groovy Tunes -->
+        <article class="scrapbook-project-card" data-project-id="groovytunes">
+          <div class="washi-tape top-right pink"></div>
+          <div class="project-thumbnail-wrapper">
+            <img src="assets/images/project-motion-2.jpg" alt="Groovy Tunes 70s Animated Music Visualizer" class="project-thumbnail-img">
+            <div class="project-play-badge">▶</div>
+          </div>
+          <div class="project-card-details">
+            <span class="project-client-tag">RETROPOP RECORDS • 2024</span>
+            <h3 class="project-card-title">GROOVY TUNES: PSYCHEDELIC VISUALIZER</h3>
+            <p class="project-card-desc">70s character animation and liquid soundwave flow for an indie funk anthem, blending retro risograph aesthetics with modern frame-by-frame groove.</p>
+            <div class="project-tags-row">
+              <span class="mini-tag">2D Character Cel</span>
+              <span class="mini-tag">Color Direction</span>
+              <span class="mini-tag">Music Visualizer</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="stamp-badge">CASE STUDY</span>
+              <span class="view-case-study-link">OPEN SKETCHBOOK</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- CATEGORY 2: BRANDING & PACKAGING DESIGN -->
+      <div class="category-divider branding" id="branding">
+        <div class="category-divider-card">
+          <div class="divider-info">
+            <span class="divider-category-tag">CATEGORY 02</span>
+            <h2 class="divider-title">BRANDING &amp; PACKAGING</h2>
+            <p class="divider-punchline">"Packaging that doesn't just sit on a shelf — it demands your eyes."</p>
+          </div>
+          <div class="divider-icon-box" title="Branding icon">
+            🥫
+          </div>
+        </div>
+      </div>
+
+      <!-- Mascot Interactive Row with Real SVG Red Connector String -->
+      <div class="branding-mascot-anchor">
+        <div class="mascot-interactive-row">
+          <img src="assets/images/avatar-work.jpg" alt="Maya pointing and pulling the string to packaging cards" class="mascot-avatar-small" id="mascot-work-avatar">
+          <div class="mascot-interactive-speech">
+            "Psst! Take a look at these cans and cafe goodies — I spent 3 weeks perfecting the hand-lettered curves and tactile textures!" <span>👇✨</span>
+          </div>
+          <div class="stamp-badge green">100% FRESH TASTE</div>
+        </div>
+      </div>
+
+      <!-- Branding Projects Grid -->
+      <div class="projects-grid-two">
+        <!-- Project 3: Artisanal Soda Co -->
+        <article class="scrapbook-project-card" data-project-id="artisanalsoda">
+          <div class="washi-tape top-left green"></div>
+          <div class="project-thumbnail-wrapper">
+            <img src="assets/images/project-brand-1.jpg" alt="Artisanal Soda Co Craft Aluminum Cans Mockup" class="project-thumbnail-img">
+          </div>
+          <div class="project-card-details">
+            <span class="project-client-tag">WILD BOTANICA CO • 2025</span>
+            <h3 class="project-card-title">ARTISANAL SODA: BOTANICAL SPARKLERS</h3>
+            <p class="project-card-desc">Full brand identity and aluminum can packaging suite for an artisanal soda line featuring playful hand-drawn citrus fruits, custom display type, and vibrant cobalt hues.</p>
+            <div class="project-tags-row">
+              <span class="mini-tag">Packaging Design</span>
+              <span class="mini-tag">Can Mockups</span>
+              <span class="mini-tag">Botanical Doodles</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="stamp-badge green">SHELF READY</span>
+              <span class="view-case-study-link">OPEN SKETCHBOOK</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Obake Matcha -->
+        <article class="scrapbook-project-card" data-project-id="obakematcha">
+          <div class="washi-tape top-right yellow"></div>
+          <div class="project-thumbnail-wrapper">
+            <img src="assets/images/project-brand-2.jpg" alt="Obake Matcha Kyoto Specialty Cafe Brand Identity" class="project-thumbnail-img">
+          </div>
+          <div class="project-card-details">
+            <span class="project-client-tag">OBAKE SPECIALTY CAFE KYOTO • 2024</span>
+            <h3 class="project-card-title">OBAKE MATCHA: GHOST CAFE IDENTITY</h3>
+            <p class="project-card-desc">End-to-end brand identity featuring a lovable ghost mascot, sage green takeaway paper cups, embossed pastry packaging boxes, tote bags, and vinyl die-cut stickers.</p>
+            <div class="project-tags-row">
+              <span class="mini-tag">Mascot Character</span>
+              <span class="mini-tag">Cafe Collateral</span>
+              <span class="mini-tag">Eco Packaging</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="stamp-badge green">FEATURED ON BEHANCE</span>
+              <span class="view-case-study-link">OPEN SKETCHBOOK</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- CATEGORY 3: EDITORIAL & POSTER DESIGN -->
+      <div class="category-divider editorial" id="editorial">
+        <div class="category-divider-card">
+          <div class="divider-info">
+            <span class="divider-category-tag">CATEGORY 03</span>
+            <h2 class="divider-title">EDITORIAL &amp; POSTER DESIGN</h2>
+            <p class="divider-punchline">"Ink on paper, riso grain textures, and unapologetic typographic weight."</p>
+          </div>
+          <div class="divider-icon-box" title="Poster icon">
+            📰
+          </div>
+        </div>
+      </div>
+
+      <!-- Editorial Projects Grid -->
+      <div class="projects-grid-two">
+        <!-- Project 5: Sunwave Music Fest -->
+        <article class="scrapbook-project-card" data-project-id="sunwavefest">
+          <div class="washi-tape top-left yellow"></div>
+          <div class="paperclip"></div>
+          <div class="project-thumbnail-wrapper" style="aspect-ratio: 3/4;">
+            <img src="assets/images/project-poster-1.jpg" alt="Sunwave Music Fest Risograph Poster Design" class="project-thumbnail-img">
+          </div>
+          <div class="project-card-details">
+            <span class="project-client-tag">SUNWAVE COLLECTIVE • 2025</span>
+            <h3 class="project-card-title">SUNWAVE FEST: RISOGRAPH POSTER</h3>
+            <p class="project-card-desc">3-color risograph festival lineup poster printed on heavy flecked paper using fluorescent pink, sunflower yellow, and deep cyan ink overlaps.</p>
+            <div class="project-tags-row">
+              <span class="mini-tag">Risograph 3-Color</span>
+              <span class="mini-tag">Screenprint</span>
+              <span class="mini-tag">Hand Lettering</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="stamp-badge">PRINTED RUN 500x</span>
+              <span class="view-case-study-link">OPEN SKETCHBOOK</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Graphic Design Exhibition -->
+        <article class="scrapbook-project-card" data-project-id="designexhibition">
+          <div class="washi-tape top-right pink"></div>
+          <div class="project-thumbnail-wrapper" style="aspect-ratio: 3/4;">
+            <img src="assets/images/project-poster-2.jpg" alt="Graphic Design Exhibition Zine Spread and Poster" class="project-thumbnail-img">
+          </div>
+          <div class="project-card-details">
+            <span class="project-client-tag">CITY GALLERY &amp; DESIGN MUSEUM • 2024</span>
+            <h3 class="project-card-title">LIMITS OF FORM: ZINE &amp; EXHIBITION</h3>
+            <p class="project-card-desc">Experimental multi-page typographic catalog and exhibition posters exploring cut paper shapes, collage aesthetics, and bold contrast typography.</p>
+            <div class="project-tags-row">
+              <span class="mini-tag">Zine Layout</span>
+              <span class="mini-tag">Experimental Type</span>
+              <span class="mini-tag">Cut Paper Collage</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="stamp-badge">EXHIBITION SELECTION</span>
+              <span class="view-case-study-link">OPEN SKETCHBOOK</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- CATEGORY 4: APPAREL & MERCH GRAPHICS -->
+      <div class="category-divider apparel" id="merch">
+        <div class="category-divider-card">
+          <div class="divider-info">
+            <span class="divider-category-tag">CATEGORY 04</span>
+            <h2 class="divider-title">APPAREL &amp; MERCH GRAPHICS</h2>
+            <p class="divider-punchline">"Wearable art that turns everyday people into walking gallery walls."</p>
+          </div>
+          <div class="divider-icon-box" title="Apparel icon">
+            👕
+          </div>
+        </div>
+      </div>
+
+      <!-- Merch Projects Grid -->
+      <div class="projects-grid-two">
+        <!-- Project 7: Night Owl Studios -->
+        <article class="scrapbook-project-card" data-project-id="nightowl">
+          <div class="washi-tape top-left lavender"></div>
+          <div class="project-thumbnail-wrapper">
+            <img src="assets/images/project-apparel-1.jpg" alt="Night Owl Studios Streetwear Graphic Tee" class="project-thumbnail-img">
+          </div>
+          <div class="project-card-details">
+            <span class="project-client-tag">NIGHT OWL STUDIOS TOKYO • 2024</span>
+            <h3 class="project-card-title">NIGHT OWL: UNDERGROUND APPAREL</h3>
+            <p class="project-card-desc">Oversized heavy cotton graphic tee back-print inspired by Tokyo night culture, featuring electric neon psychedelic owl illustrations, hang tags, and custom skull stickers.</p>
+            <div class="project-tags-row">
+              <span class="mini-tag">Streetwear Graphic</span>
+              <span class="mini-tag">Screen Print Separation</span>
+              <span class="mini-tag">Hang Tag Design</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="stamp-badge">SOLD OUT DROP</span>
+              <span class="view-case-study-link">OPEN SKETCHBOOK</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8: Merch Collective Pin & Stickers -->
+        <article class="scrapbook-project-card" data-project-id="merchcollective">
+          <div class="washi-tape top-right blue"></div>
+          <div class="project-thumbnail-wrapper">
+            <img src="assets/images/project-apparel-2.jpg" alt="Merch Collective Custom Enamel Pins and Holographic Stickers" class="project-thumbnail-img">
+          </div>
+          <div class="project-card-details">
+            <span class="project-client-tag">STUDIO MAYA SELF-RELEASE • 2024</span>
+            <h3 class="project-card-title">STICKER BOMB &amp; ENAMEL PIN SET</h3>
+            <p class="project-card-desc">Collection of die-cut holographic vinyl stickers and gold metal hard enamel pins with custom kraft paper backing card packaging. 100% hand-drawn characters.</p>
+            <div class="project-tags-row">
+              <span class="mini-tag">Enamel Pins</span>
+              <span class="mini-tag">Holographic Foil</span>
+              <span class="mini-tag">Kraft Backing Cards</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="stamp-badge">LIMITED EDITION</span>
+              <span class="view-case-study-link">OPEN SKETCHBOOK</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. INTERACTIVE SCRAPBOOK PLAYGROUND / STAMP & DOODLE PAD
+       ========================================================================== -->
+  <section class="playground-section" id="playground">
+    <div class="container">
+      <div class="playground-card">
+        <div class="washi-tape center-top pink"></div>
+        <div class="paperclip"></div>
+        
+        <h2 class="playground-title">INTERACTIVE SCRAPBOOK PAD</h2>
+        <p class="playground-subtitle">
+          Pick a stamp below, then click inside the doodle canvas (or anywhere on this page when "Stamp Mode" is on) to leave your mark!
+        </p>
+
+        <!-- Stamp Selector -->
+        <div class="stamp-selector-bar" id="stamp-selector">
+          <button class="stamp-picker-btn active" data-stamp="⭐"><span>⭐</span> Gold Star</button>
+          <button class="stamp-picker-btn" data-stamp="💖"><span>💖</span> Doodle Heart</button>
+          <button class="stamp-picker-btn" data-stamp="👻"><span>👻</span> Matcha Ghost</button>
+          <button class="stamp-picker-btn" data-stamp="🍕"><span>🍕</span> Pizza Slice</button>
+          <button class="stamp-picker-btn" data-stamp="⚡"><span>⚡</span> Electric Bolt</button>
+          <button class="stamp-picker-btn" data-stamp="APPROVED!"><span>💮</span> "APPROVED"</button>
+          <button class="stamp-picker-btn" data-stamp="100% FRESH"><span>🍋</span> "100% FRESH"</button>
+        </div>
+
+        <!-- Interactive Canvas Box -->
+        <div class="playground-canvas-box" id="playground-canvas">
+          <span class="canvas-hint-text">CLICK HERE TO STAMP YOUR DOODLES! ✏️✨</span>
+        </div>
+
+        <div class="playground-actions-row">
+          <button class="btn-doodle outline" id="clear-stamps-btn">
+            CLEAR STAMPS <span>🗑️</span>
+          </button>
+          <button class="btn-doodle dark" id="confetti-celebrate-btn">
+            CELEBRATE CRAFT! <span>🎉</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. CLOSING / CONTACT POSTCARD SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-layout-grid">
+        
+        <!-- Left: Illustrated Avatar in Contact Pose + Playful Signoff Speech -->
+        <div class="contact-left-col">
+          <div class="contact-avatar-box">
+            <div class="washi-tape top-left yellow"></div>
+            <img src="assets/images/avatar-contact.jpg" alt="Maya waving and throwing a paper airplane illustration" class="contact-avatar-img">
+          </div>
+
+          <div class="signoff-speech-bubble">
+            "You reached the end of the scrapbook! Got a crazy dream, brand launch, or motion gig? Let's turn caffeine into art." 🚀✨
+          </div>
+        </div>
+
+        <!-- Right: Postcard Envelope Card Form -->
+        <div class="postcard-envelope-card" id="postcard-envelope">
+          <div class="airmail-strip"></div>
+          <div class="washi-tape top-right pink"></div>
+
+          <div class="postcard-top-row">
+            <div>
+              <span class="section-label-doodle">// SAY HELLO</span>
+              <h2 style="font-family: var(--font-display); font-size: 2.4rem; color: var(--ink-primary); line-height: 1;">
+                SEND A PAPER AIRPLANE
+              </h2>
+            </div>
+
+            <!-- Vintage Postage Stamp -->
+            <div class="postcard-postage-stamp">
+              <span class="postage-symbol">✈️</span>
+              <span class="postage-val">AIRMAIL<br>2026</span>
+            </div>
+          </div>
+
+          <!-- Postcard Form -->
+          <form class="postcard-form" id="contact-postcard-form" onsubmit="return false;">
+            <div class="form-group">
+              <label for="sender-name" class="form-label">
+                <span>✎</span> WHO IS SENDING THIS? (YOUR NAME / STUDIO)
+              </label>
+              <input type="text" id="sender-name" class="form-input" placeholder="e.g. Alex from Sunshine Studios" required>
+            </div>
+
+            <div class="form-group">
+              <label for="sender-email" class="form-label">
+                <span>✉</span> WHERE CAN I WRITE BACK? (YOUR EMAIL)
+              </label>
+              <input type="email" id="sender-email" class="form-input" placeholder="alex@sunshinestudios.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span>✦</span> WHAT ARE WE DREAMING UP? (SELECT SCOPE)
+              </label>
+              <div class="project-type-chips">
+                <label class="chip-label">
+                  <input type="checkbox" name="scope" value="Branding" checked>
+                  <span class="chip-box">🥫 Brand &amp; Packaging</span>
+                </label>
+                <label class="chip-label">
+                  <input type="checkbox" name="scope" value="Motion">
+                  <span class="chip-box">🎬 Motion Graphics</span>
+                </label>
+                <label class="chip-label">
+                  <input type="checkbox" name="scope" value="Editorial">
+                  <span class="chip-box">📰 Poster &amp; Editorial</span>
+                </label>
+                <label class="chip-label">
+                  <input type="checkbox" name="scope" value="Merch">
+                  <span class="chip-box">👕 Merch &amp; Apparel</span>
+                </label>
+                <label class="chip-label">
+                  <input type="checkbox" name="scope" value="Consulting">
+                  <span class="chip-box">☕ Just Coffee &amp; Advice</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="sender-message" class="form-label">
+                <span>✏️</span> TELL ME ABOUT YOUR PROJECT &amp; TIMELINE
+              </label>
+              <textarea id="sender-message" class="form-textarea" placeholder="Tell me what kind of wild visual vibe you're envisioning, budget range, and when you want to launch..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-doodle coral" id="submit-airplane-btn" style="width: 100%; font-size: 1.15rem; padding: 1.1rem;">
+              <span>LAUNCH PAPER AIRPLANE!</span> <span>✈️💨</span>
+            </button>
+          </form>
+
+          <!-- Doodle-Tagged Social Links -->
+          <div class="contact-socials-row">
+            <span class="social-title-doodle">// FIND ME IN THE WILD:</span>
+            <div class="social-buttons-list">
+              <button class="social-btn copy-email" id="copy-email-btn" title="Click to copy email address">
+                <span>📧</span> <span>hello@mayachen.design</span> <span>[COPY]</span>
+              </button>
+              <a href="http://instagram.com/reels/DdMVCUwzjbV/" target="_blank" rel="noopener noreferrer" class="social-btn" id="social-instagram">
+                <span>📸</span> <span>Instagram Reel</span>
+              </a>
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-btn" id="social-behance">
+                <span>🎨</span> <span>Behance</span>
+              </a>
+              <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-btn" id="social-dribbble">
+                <span>⚡</span> <span>Dribbble</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" id="social-linkedin">
+                <span>💼</span> <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scrapbook Footer -->
+    <footer class="scrapbook-footer">
+      <div class="container">
+        <p class="footer-copy">Drawn with love, gallons of tea, and too many vector anchor points © 2026</p>
+        <div class="footer-signature">Maya Chen — Visual Designer</div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ==========================================================================
+       7. CASE STUDY DETAIL MODAL / LIGHTBOX
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true">
+    <div class="modal-content-card" role="dialog" aria-modal="true">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Case Study">&times;</button>
+      
+      <div class="modal-project-header">
+        <span class="section-label-doodle" id="modal-client-tag">CLIENT ARCHIVE</span>
+        <h2 class="modal-project-title" id="modal-title">PROJECT TITLE</h2>
+        <div class="modal-tags-row" id="modal-tags-container"></div>
+      </div>
+
+      <!-- Main Project Media Container -->
+      <div class="modal-media-container" id="modal-media-wrap">
+        <img src="" alt="" class="modal-media-img" id="modal-img">
+      </div>
+
+      <div class="modal-details-grid">
+        <div class="modal-overview-text">
+          <h4>// THE BRIEF &amp; CREATIVE CONCEPT</h4>
+          <p id="modal-concept-text"></p>
+          
+          <h4 style="margin-top: 1.5rem;">// THE PROCESS &amp; SCRAPBOOK NOTES</h4>
+          <p id="modal-process-text"></p>
+        </div>
+
+        <div class="modal-sidebar-box">
+          <div class="modal-sidebar-item">
+            <div class="modal-sidebar-label">TIMELINE &amp; YEAR</div>
+            <div class="modal-sidebar-val" id="modal-year-val">2025</div>
+          </div>
+
+          <div class="modal-sidebar-item">
+            <div class="modal-sidebar-label">CORE DISCIPLINES</div>
+            <div class="modal-sidebar-val" id="modal-roles-val">Art Direction, Identity</div>
+          </div>
+
+          <div class="modal-sidebar-item">
+            <div class="modal-sidebar-label">TOOLS USED</div>
+            <div class="modal-sidebar-val" id="modal-tools-val">Illustrator, After Effects</div>
+          </div>
+
+          <div class="modal-sidebar-item">
+            <div class="modal-sidebar-label">COLOR PALETTE</div>
+            <div class="modal-swatches-row" id="modal-swatches"></div>
+          </div>
+
+          <button class="btn-doodle coral" id="modal-contact-shortcut" style="width: 100%; margin-top: 1.5rem; font-size: 0.9rem;">
+            COMMISSION SIMILAR WORK <span>→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="doodle-toast" id="doodle-toast">
+    <span id="toast-icon">✨</span>
+    <span id="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts: Lenis Smooth Scroll, GSAP, ScrollTrigger, Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  
+  <!-- Custom Application Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
